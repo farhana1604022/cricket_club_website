@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+<link rel="stylesheet" href="home.css" />
+
+<title>Welcome To Bangladesh Cricket Club</title>
+</head>
+<body>
+  <h1 align="center"><b>Bangladesh Cricket Club</b></h1>
+
+<div class="topnav" id="myTopnav">
+  <a href="home.html" class="active">Home</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Form List
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="form_view.php">Player Registration Form</a>
+      <a href="contract_view.php">Player Contract Form</a>
+      <a href="club_view.php">Club Form</a>
+      <a href="players_performance.php">Players Performamce form</a>
+      <a href="matchinformation.php">Match information Form</a>
+      <a href="teaminformation.php">Team Information Form</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Player View
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="attachment1.php">Player Registration View</a>
+      <a href="attachment2.php">Player Contract View</a>
+      <a href="attachment3.php">Club View</a>
+      <a href="attachment41.php">Performance View</a>
+      <a href="attachment42.php">Match Information View</a>
+      <a href="attachment5.php">Team Information View</a>
+      <a href="examview.php">Exam View</a>
+    </div>
+  </div>
+
+  <a href="about.html">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div><br>
+<div class="head" align= "center">News</div>
+<div class="news">
+  <marquee>The third Test between New Zealand and Bangladesh, which was due to begin on the 16th of March, was ultimately called off and the traumatized visiting team left the country the following morning.  </marquee>
+</div>
+<div style="padding-left:16px">
+<h2 align="center">Welcome To Bangladesh Cricket Club</h2>
+<p><b>Bangladesh Cricket Board (BCB), previously known as the Bangladesh Cricket Control Board,
+   is the main governing body of cricket in Bangladesh. BCB became a full member of the International
+    Cricket Council on 26 June 2000. The Board has its headquarters in Dhaka, it is responsible for the
+    operation and development of cricket, maintenance of venues,
+  and selection for the national team. It is operated by the Government of Bangladesh.</b></p>
+</div>
+<h2 align = "center"><b>Cricket Gallery</b></h2>
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="images/1.jpg" style="width:100%">
+  <img class="mySlides" src="images/2.jpg" style="width:100%">
+  <img class="mySlides" src="images/3.jpg" style="width:100%">
+  <img class="mySlides" src="images/4.jpg" style="width:100%">
+  <img class="mySlides" src="images/5.jpg" style="width:100%">
+</div> <br> <hr>
+
+
+<script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) { myIndex = 1 }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 1800); // Change image every 1.5 seconds
+  }
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<div class="footer">
+  <p>&copy; All Rights Reserved by Bangladesh Cricket Clubs developments</p>
+</div>
+
+</body>
+</html>
